@@ -1,0 +1,63 @@
+Arguments: 
+  /usr/local/Cellar/node/14.5.0/bin/node /Users/belle/.yarn/bin/yarn.js add http-status
+
+PATH: 
+  /Users/belle/.yarn/bin:/Users/belle/.config/yarn/global/node_modules/.bin:/Users/belle/go/bin:/usr/local/go/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/belle/.yarn/bin:/Users/belle/.config/yarn/global/node_modules/.bin:/Users/belle/go/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.5.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: ENOSPC: no space left on device, write
+
+npm manifest: 
+  {
+    "name": "express-boilerplate",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+      "start": "NODE_ENV=production node ./src/bin/www",
+      "dev": "NODE_ENV=development nodemon ./src/bin/www",
+      "test": "jest",
+      "test:watch": "jest --watchAll",
+      "lint": "eslint .",
+      "lint:fix": "eslint --fix ."
+    },
+    "dependencies": {
+      "cookie-parser": "~1.4.3",
+      "express": "~4.16.0",
+      "helmet": "^3.21.1",
+      "http-errors": "~1.6.2",
+      "morgan": "~1.9.0"
+    },
+    "devDependencies": {
+      "eslint": "^5.12.0",
+      "eslint-config-airbnb-base": "^13.1.0",
+      "eslint-config-prettier": "^6.3.0",
+      "eslint-plugin-import": "^2.14.0",
+      "eslint-plugin-prettier": "^3.1.1",
+      "jest": "^24.8.0",
+      "nodemon": "^1.18.7",
+      "supertest": "^3.3.0"
+    },
+    "jest": {
+      "testEnvironment": "node"
+    },
+    "nodemonConfig": {
+      "ignore": [
+        "*.test.js"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
