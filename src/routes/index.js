@@ -1,10 +1,13 @@
+/* eslint-disable no-unused-vars */
 const express = require('express');
+const { ValidationController } = require('../controllers/validation');
 
 const router = express.Router();
 
-// eslint-disable-next-line no-unused-vars
 router.get('/', (req, res, next) => {
   res.send({ message: 'Hello world' });
 });
+
+router.post('/validate-rule', async (req, res, next) => ValidationController(req, res))
 
 module.exports = router;

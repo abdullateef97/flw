@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="5" failures="0" errors="0" time="0.829">
-  <testsuite name="app" errors="0" failures="0" skipped="0" timestamp="2021-01-28T23:12:28" time="0.628" tests="4">
-    <testcase classname="app should export the express app correctly" name="app should export the express app correctly" time="0.002">
-    </testcase>
-    <testcase classname="app GET / should respond to the GET method with 200" name="app GET / should respond to the GET method with 200" time="0.026">
-    </testcase>
-    <testcase classname="app GET /404 should respond to the GET method with a 404 for a route that does not exist" name="app GET /404 should respond to the GET method with a 404 for a route that does not exist" time="0.004">
-    </testcase>
-    <testcase classname="app GET /404 should respond to the POST method with a 404 for a route that does not exist" name="app GET /404 should respond to the POST method with a 404 for a route that does not exist" time="0.002">
+<testsuites name="jest tests" tests="9" failures="0" errors="0" time="1.569">
+  <testsuite name="badRequest" errors="0" failures="0" skipped="0" timestamp="2021-01-29T21:14:26" time="0.716" tests="1">
+    <testcase classname="badRequest should return an httpCode of 400" name="badRequest should return an httpCode of 400" time="0.016">
     </testcase>
   </testsuite>
-  <testsuite name="badRequest" errors="0" failures="0" skipped="0" timestamp="2021-01-28T23:12:29" time="0.157" tests="1">
-    <testcase classname="badRequest should return an httpCode of 400" name="badRequest should return an httpCode of 400" time="0.001">
+  <testsuite name="app" errors="0" failures="0" skipped="0" timestamp="2021-01-29T21:14:26" time="1.146" tests="4">
+    <testcase classname="app should export the express app correctly" name="app should export the express app correctly" time="0.003">
+    </testcase>
+    <testcase classname="app GET / should respond to the GET method with 200" name="app GET / should respond to the GET method with 200" time="0.02">
+    </testcase>
+    <testcase classname="app GET /404 should respond to the GET method with a 404 for a route that does not exist" name="app GET /404 should respond to the GET method with a 404 for a route that does not exist" time="0.005">
+    </testcase>
+    <testcase classname="app GET /404 should respond to the POST method with a 404 for a route that does not exist" name="app GET /404 should respond to the POST method with a 404 for a route that does not exist" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="rule validation" errors="0" failures="0" skipped="0" timestamp="2021-01-29T21:14:26" time="1.133" tests="4">
+    <testcase classname="rule validation should throw an error if rule is null, empty or not passed" name="rule validation should throw an error if rule is null, empty or not passed" time="0.003">
+    </testcase>
+    <testcase classname="rule validation should throw an error if field is not passed" name="rule validation should throw an error if field is not passed" time="0">
+    </testcase>
+    <testcase classname="rule validation should throw an error if condition is not passed" name="rule validation should throw an error if condition is not passed" time="0.001">
+    </testcase>
+    <testcase classname="rule validation should throw an error if condition_value is not passed" name="rule validation should throw an error if condition_value is not passed" time="0">
     </testcase>
   </testsuite>
 </testsuites>

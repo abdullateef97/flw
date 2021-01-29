@@ -13,10 +13,14 @@ function respond({ res, status, httpCode, data, message }) {
   return res.status(httpCode).send(response)
 }
 
-export const successResponse = ({ res, data, message }) => {
+const successResponse = ({ res, data, message }) => {
   return respond({ res, status: "success", httpCode: httpStatus.OK, data, message })
 }
 
-export const failureResponse = ({ res, message, data, httpCode }) => {
+const failureResponse = ({ res, message, data, httpCode }) => {
   return respond({ res, status: "error", httpCode, data, message })
+}
+
+module.exports = {
+  successResponse, failureResponse,
 }
