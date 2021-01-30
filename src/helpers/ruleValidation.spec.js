@@ -7,7 +7,7 @@ describe('rule validation', () => {
       throw new Error('error');
     } catch (error) {
       expect(error.httpCode).toEqual(400);
-      expect(error.message).toEqual('rule is required');
+      expect(error.message).toEqual('rule is required.');
     }
   })
   it('should throw an error if field is not passed', () => {
@@ -16,7 +16,7 @@ describe('rule validation', () => {
       throw new Error('error');
     } catch (error) {
       expect(error.httpCode).toEqual(400);
-      expect(error.message).toEqual('field is required');
+      expect(error.message).toEqual('field is required.');
     }
   })
 
@@ -26,7 +26,7 @@ describe('rule validation', () => {
       throw new Error('error');
     } catch (error) {
       expect(error.httpCode).toEqual(400);
-      expect(error.message).toEqual('condition is required');
+      expect(error.message).toEqual('condition is required.');
     }
   })
 
@@ -36,7 +36,7 @@ describe('rule validation', () => {
       throw new Error('error');
     } catch (error) {
       expect(error.httpCode).toEqual(400);
-      expect(error.message).toEqual('condition_value is required');
+      expect(error.message).toEqual('condition_value is required.');
     }
   })
 })

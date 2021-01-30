@@ -1,6 +1,8 @@
 const httpStatus = require('http-status')
 
 const badRequest = (message, data = null) => {
+  // eslint-disable-next-line no-param-reassign
+  data = data ? {validation: data} : data;
   return {
     message, httpCode: httpStatus.BAD_REQUEST,data
   }
@@ -8,7 +10,7 @@ const badRequest = (message, data = null) => {
 
 const okRequest = (message, data) => {
   return {
-    message, data
+    message, data: {validation: data}
   }
 }
 
