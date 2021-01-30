@@ -1,5 +1,5 @@
 const { failureResponse, successResponse } = require("../lib/response");
-const { ValidationService } = require("../services/validaton");
+const { ValidationService } = require("../services/validation");
 
 const ValidationController = async(req, res) => {
   const { body } = req;
